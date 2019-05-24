@@ -15,13 +15,13 @@ class App extends Component {
           <Countries />
 
           <Switch>
-            {countries.map(country => {
-              return (
+            
+              
                 <Route path={`/${country.cca3}`}
                   render={(props) => <Details name={country.name.common} capital={country.capital} area={country.area} borders={country.borders}/>}
                 />
-              );
-            })}
+              
+            
           </Switch>
         </div>
       </div>
