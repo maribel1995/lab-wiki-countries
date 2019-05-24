@@ -17,7 +17,7 @@ class App extends Component {
           <Switch>
             
               
-                <Route path={‘:id’}
+                <Route path={‘/:id’}
                   render={(props) => <Details name={country.name.common} capital={country.capital} area={country.area} borders={country.borders}/>}
                 />
               
